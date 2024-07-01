@@ -1,0 +1,11 @@
+{% extends 'base_generic.html' %}
+{% block content %}
+  <h2>Patient Dashboard</h2>
+  <p>Welcome, {{ user.first_name }}!</p>
+  <ul>
+    <li>First Name: {{ user.first_name }}</li>
+    <li>Last Name: {{ user.last_name }}</li>
+    <li>Email: {{ user.email }}</li>
+    <li>Address: {{ user.address_line1 }}, {{ user.city }}, {{ user.state }}, {{ user.pincode }}</li>
+  </ul>
+{% endblock %}
